@@ -7,6 +7,7 @@ $(function() {
 	// clientStuff();
 
 	 $("header h1").fitText(1, { minFontSize: '38px', maxFontSize: '72px' });
+	 $("p").fitText(1, { minFontSize: '14px', maxFontSize: '26px' });
 	 $(".biglink").fitText(1.5);
 
 	 $('textarea').autosize();
