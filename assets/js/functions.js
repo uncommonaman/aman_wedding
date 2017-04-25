@@ -6,10 +6,10 @@ $(function() {
 		// workLoad();
 	// clientStuff();
 
-//	 $("header h1").fitText(1, { minFontSize: '70px', maxFontSize: '172px' });
-//	 $(".biglink").fitText(1.5);
-//
-//	 $('textarea').autosize();
+	 $("header h1").fitText(1, { minFontSize: '38px', maxFontSize: '72px' });
+	 $(".biglink").fitText(1.5);
+
+	 $('textarea').autosize();
 });
 
 function changeFrame() {
