@@ -14,11 +14,11 @@ $(function() {
 
 function changeFrame() {
 //    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('height','500px');
-    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('height','500px');
-    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('padding-right','30px');
+    $('div #cont_9b089977312c951778838b0645c5355c').css('height','500px');
+    $('div #cont_9b089977312c951778838b0645c5355c').css('padding-right','30px');
     
-    $('#3f08dd8c7893d50c153940ce6af1c953').css('position','relative');
-    $('#3f08dd8c7893d50c153940ce6af1c953').css('top','150px');
+    $('#9b089977312c951778838b0645c5355c').css('position','relative');
+    $('#9b089977312c951778838b0645c5355c').css('top','150px');
     
 }
 
