@@ -6,19 +6,21 @@ $(function() {
 		// workLoad();
 	// clientStuff();
 
-	// $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
-	// $(".biglink").fitText(1.5);
+	 $("header h1").fitText(1, { minFontSize: '70px', maxFontSize: '172px' });
+	 $(".biglink").fitText(1.5);
 
-	// $('textarea').autosize();
+	 $('textarea').autosize();
 });
 
 function changeFrame() {
 //    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('height','500px');
-    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('height','500px');
-    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('padding-right','30px');
+//    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('height','500px');
+//    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('padding-right','30px');
     
-    $('#3f08dd8c7893d50c153940ce6af1c953').css('position','relative');
-    $('#3f08dd8c7893d50c153940ce6af1c953').css('top','150px');
+    $('#cont_c8d46d3f4ddbd6b23245b21e43430211').css('display','flex');
+    $('#cont_c8d46d3f4ddbd6b23245b21e43430211').css('justify-content','center');
+    $('#cont_c8d46d3f4ddbd6b23245b21e43430211').css('align-items','center');
+    $('#cont_c8d46d3f4ddbd6b23245b21e43430211').css('height','520px');
     
 }
 

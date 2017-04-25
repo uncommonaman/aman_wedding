@@ -1,5 +1,8 @@
+selection#mobile
+	display: none
 .section-events
 	background-color: #e1c184
+	margin-top: 40px
 	
 	
 	.breakhead
@@ -13,7 +16,7 @@
 	.row
 		+clearfix
 		.left
-			width: 70%
+			width: 60%
 			float: left
 			.leftwrap
 				margin: 0px auto
@@ -43,8 +46,25 @@
 					#where
 						text-align: left
 		.right
-			width: 30%
+			width: 40%
 			float: right
+
+@media (max-width: 753px)
+	selection#mobile
+		display: block
+		#cont_cb2b792c316743129afbb522a92cdfbb
+			height: 150px
+			width: 410px
+			display: flex
+			align-items: center
+			justify-content: center
+	.right
+		display: none
+	.section-events .row .left
+		width: 100%
+		
+	
+			
 				
 			
 
