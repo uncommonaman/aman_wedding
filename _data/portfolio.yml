@@ -6,7 +6,7 @@ menu:
 - {name: Countdown, url: '#about-me'}
 - {name: The Wedding, url: '#thewedding'}
 - {name: Calender, url: '#cal'}
-- {name: Map, url: '#contact'}
+- {name: Photos, url: photos.html}
 
 
 #............................
