@@ -2,7 +2,7 @@ $(function() {
 	smoothScroll(300);
 //	workBelt();
 //	workLoad();
-	changeFrame();
+	// changeFrame();
 		// workLoad();
 	// clientStuff();
 
@@ -12,12 +12,11 @@ $(function() {
 
 	 $('textarea').autosize();
 
-    // $('.fadein img:gt(0)').hide();
-    // setInterval(function(){
-    //   $('.fadein :first-child').fadeOut()
-    //      .next('img').fadeIn()
-    //      .end().appendTo('.fadein');}, 
-    //   3000);
+    $('img').mousedown(function (e) {
+  if(e.button == 2) { // right click
+    return false; // do nothing!
+  }
+}
 
 });
 
