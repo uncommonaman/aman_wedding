@@ -375,7 +375,8 @@ header {
       font-size: 14px;
       font-weight: 700; }
       header nav a:hover {
-        color: black; }
+        color: white;
+        border-bottom: 1px solid white; }
   header h1 {
     font-size: 72px;
     font-weight: 700;

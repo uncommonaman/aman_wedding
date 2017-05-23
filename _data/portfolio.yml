@@ -37,12 +37,12 @@ blurb: <p><strong>Travis specializes in making things</strong> for human people.
 #............................
 #work Section 
 projects:
-- {name: 'Roka', date: '30', month: 'April', day: 'Sunday'}
-- {name: 'Ring Ceremony and Sangeet', date: '1', month: 'July',day: 'Saturday'}
-- {name: 'Anand Karaj', date: '2', month: 'July',day: 'Sunday'}
-- {name: 'Reception', date: '2', month: 'July', day: 'Sunday'}
-- {name: 'Kalyan', date: '3', month: 'July',  day: 'Monday'}
-- {name: 'Bhopal reception', date: '6', month: 'July', day: 'Thursday'}
+- {name: 'Ring Ceremony and Sangeet', date: '1', month: 'July',day: 'Saturday', link: 'https://goo.gl/maps/hPXxLGHyqsG2'}
+- {name: 'Reception of Barat & Anand Karaj', date: '2', month: 'July',day: 'Sunday', link: 'https://goo.gl/maps/kHHLFvea97F2'}
+- {name: 'Lunch', date: '2', month: 'July',day: 'Sunday', link: 'https://goo.gl/maps/HirgmZSQYnM2'}
+- {name: 'Reception', date: '2', month: 'July', day: 'Sunday', link: 'https://goo.gl/maps/HirgmZSQYnM2'}
+- {name: 'Muhurtham', date: '3', month: 'July',  day: 'Monday', link: 'https://goo.gl/maps/HirgmZSQYnM2'}
+- {name: 'Bhopal reception', date: '6', month: 'July', day: 'Thursday', link: 'https://goo.gl/maps/jeLpedLgLWx'}
 
 
 
