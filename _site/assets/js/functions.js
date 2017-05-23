@@ -2,21 +2,14 @@ $(function() {
 	smoothScroll(300);
 //	workBelt();
 //	workLoad();
-	// changeFrame();
+	changeFrame();
 		// workLoad();
 	// clientStuff();
 
 	 $("header h1").fitText(1, { minFontSize: '38px', maxFontSize: '72px' });
-	 $("p").fitText(1, { minFontSize: '14px', maxFontSize: '26px' });
+	 $(".info p").fitText(1, { minFontSize: '12px', maxFontSize: '20px' });
 	 $(".biglink").fitText(1.5);
-
 	 $('textarea').autosize();
-
-    $('img').mousedown(function (e) {
-  if(e.button == 2) { // right click
-    return false; // do nothing!
-  }
-}
 
 });
 
