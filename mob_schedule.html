@@ -1,4 +1,8 @@
-<head><script src="assets/js/jquery-2.1.1.min.js"></script>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/js/jquery-2.1.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/fonts/css/font-awesome.min.css">
   <style>
 
   .clearfix:before, .clearfix:after {
@@ -143,7 +147,7 @@
       border-style: solid;
       border-width: 0;
       cursor: pointer;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: normal;
       line-height: normal;
       margin: 0 0 1.25rem;
@@ -166,7 +170,7 @@
 
   a.button {
       text-transform: uppercase;
-      font-family: "ProximaNova", Arial, sans-serif;
+      font-family: "Roboto", sans-serif;
       letter-spacing: 1px;
       font-size: 12px;
       -webkit-font-smoothing: antialiased;
@@ -188,6 +192,86 @@
       padding-top: 20px;
   }
 
+  /*section.main-section{
+    width: 320px;
+    height: 568px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+  }*/
+nav.tab-bar {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom: 1px solid #595959;
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    -ms-transition: -ms-transform 500ms ease;
+    transition: transform 500ms ease;
+}
+  nav.tab-bar section.left-small {
+    padding: .4rem .45rem;
+    border: none;
+    box-shadow: none;
+}
+
+nav.tab-bar a.menu-icon {
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.tab-bar .menu-icon {
+    text-indent: 2.1875rem;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    display: block;
+    padding: 0;
+    color: #FFFFFF;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+}
+
+nav.tab-bar section.tab-bar-section {
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.tab-bar-section {
+    padding: 0 0.625rem;
+    position: absolute;
+    text-align: center;
+    height: 2.8125rem;
+    top: 0;
+}
+
+h1.nav-title {
+    margin: 0;
+    text-transform: none;
+    font-family: "Flood", Times, serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+    text-align: center;
+
+}
+
+.overflow-safety {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+}
+
 
 
 
@@ -201,18 +285,19 @@
 
 
 
+<nav class="tab-bar" data-topbar="" style="">
+    <section class="left-small">
+      <a class="left-off-canvas-toggle menu-icon" aria-expanded="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span> </a>
+    </section>
+    <section class="middle tab-bar-section">
+      <h1 class="nav-title menu-icon-text" style="display: none;">Menu</h1>
+      <div id="fittext-header" style="margin:0 auto; width: 80%;">
+        <h1 class="nav-title main-section-title overflow-safety even">Schedule</h1>
+      </div>
+    </section>
+  </nav>
 
-
-
-
-
-
-
-
-
-
-
-
+<section class="main-section" style="padding-top: 44px;">
 <div class="mobile-page" id="schedule-page" style="min-height: 523px; display: block;">
           <section id="schedule">
             <div class="row">
@@ -415,5 +500,6 @@
   })
 
 </script>
-          </section>
+</section>
         </div>
+        </section>
