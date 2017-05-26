@@ -1,4 +1,11 @@
 $(function() {
+	var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+    if (isMobile.matches) {
+        //Conditional script here
+        $('selector').attr('href','http://example.com');
+        $('a[href="schedule.html"]').attr('href','mob_schedule.html')
+    }
+ 
 	smoothScroll(300);
 //	workBelt();
 //	workLoad();
