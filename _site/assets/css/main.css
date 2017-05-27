@@ -1029,6 +1029,8 @@ form {
       display: block; }
 
 @media (max-width: 541px) {
+  form .contact-info-group .label-center {
+    text-align: center; }
   form .contact-info-group label {
     width: 100%; }
     form .contact-info-group label:nth-child(1) {
@@ -1102,11 +1104,12 @@ selection#mobile {
   selection#mobile {
     display: inline-block; }
     selection#mobile #cont_cb2b792c316743129afbb522a92cdfbb {
-      height: 150px;
+      height: 150px !important;
       width: 100vw !important;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+      display: flex !important;
+      background-color: #e1c184 !important;
+      align-items: center !important;
+      justify-content: center !important; }
 
   .right {
     display: none; }
