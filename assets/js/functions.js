@@ -3,7 +3,7 @@ $(function() {
     if (isMobile.matches) {
         //Conditional script here
         $('selector').attr('href','http://example.com');
-        $('a[href="schedule.html"]').attr('href','#cal')
+        $('a[href="schedule.html"]').attr('href','#mobile-cal')
     }
  
 	smoothScroll(300);
@@ -14,7 +14,7 @@ $(function() {
 	// clientStuff();
 
 	 $("header h1").fitText(1, { minFontSize: '38px', maxFontSize: '72px' });
-	 $(".info p").fitText(1, { minFontSize: '12px', maxFontSize: '20px' });
+	 $(".info p").fitText(1, { minFontSize: '14px', maxFontSize: '20px' });
 	 $(".biglink").fitText(1.5);
 	 $('textarea').autosize();
 
