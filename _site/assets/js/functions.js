@@ -18,6 +18,21 @@ $(function() {
 	 $(".biglink").fitText(1.5);
 	 $('textarea').autosize();
 
+
+	 $(".event-container").click(function() {
+    	$eventInfo = $(this).siblings(".event-info");
+    if($eventInfo.is(":visible")===true) {
+      $eventInfo.toggle();
+      return;
+    }
+    $(".event-info").hide();
+    $eventInfo.toggle();
+  })
+
+  $(".event-info").click(function() {
+    $(this).siblings(".event-container").click();
+  })
+
 });
 
 function changeFrame() {
@@ -29,6 +44,9 @@ function changeFrame() {
     $('#cont_c8d46d3f4ddbd6b23245b21e43430211').css('justify-content','center');
     $('#cont_c8d46d3f4ddbd6b23245b21e43430211').css('align-items','center');
     $('#cont_c8d46d3f4ddbd6b23245b21e43430211').css('height','520px');
+
+
+  
     
 }
 
