@@ -5,9 +5,9 @@
 menu:
 - {name: Countdown, url: '#about-me'}
 - {name: The Wedding, url: '#thewedding'}
-- {name: Calender, url: '#cal'}
-- {name: Photos, url: photos.html}
 - {name: Schedule, url: schedule.html}
+- {name: Photos, url: photos.html}
+
 
 
 #............................

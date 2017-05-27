@@ -3,7 +3,7 @@ $(function() {
     if (isMobile.matches) {
         //Conditional script here
         $('selector').attr('href','http://example.com');
-        $('a[href="schedule.html"]').attr('href','mob_schedule.html')
+        $('a[href="schedule.html"]').attr('href','#cal')
     }
  
 	smoothScroll(300);
