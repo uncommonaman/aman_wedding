@@ -573,4 +573,27 @@ a.button {
     $('body').addClass('night')
   });
 
+
+
+  $(document).on("keyup",function(){
+    var target = $('div #schedule-navigation li')
+    if(target.hasClass('am flex-active')){
+      $('body').removeClass('night')
+      $('body').addClass('day')
+
+    }
+    if(target.hasClass('pm flex-active')){
+      $('body').removeClass('day')
+      $('body').addClass('night')
+
+    }
+    
+  });
+
+  // $(document).on("keyup",function(){
+  //   $('body').removeClass('day')
+
+  //   $('body').addClass('night')
+  // });
+
 </script>
