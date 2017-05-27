@@ -311,10 +311,10 @@ a:hover, a:focus {
   color: #e3c6b1; }
 
 ::selection {
-  background: #FFF498; }
+  background: transparent; }
 
 ::-moz-selection {
-  background: #FFF498; }
+  background: transparent; }
 
 img::selection {
   background: transparent; }
@@ -323,7 +323,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #FFF498; }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   background: #FFF;

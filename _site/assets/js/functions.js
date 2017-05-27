@@ -18,6 +18,10 @@ $(function() {
 	 $(".biglink").fitText(1.5);
 	 $('textarea').autosize();
 
+	 $(".rotate").click(function(){
+	 	$(this).toggleClass("down");
+	 })
+
 
 	 $(".event-container").click(function() {
     	$eventInfo = $(this).siblings(".event-info");
