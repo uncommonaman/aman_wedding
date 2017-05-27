@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
+
 <body>
 <header id="header">
 
@@ -21,6 +22,8 @@
 			<a href="schedule.html"> Schedule </a>
 		
 			<a href="photos.html"> Photos </a>
+		
+			<a href="#RSVP"> RSVP </a>
 		
 	</nav>
 
@@ -250,10 +253,10 @@
       z-index: 2;
 
   }
-  div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  /*div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
       margin: 0;
       padding: 0;
-  }
+  }*/
 
    p {
       line-height: 1.2;
@@ -811,6 +814,66 @@ h1.nav-title {
         </div>
         </section>
         </section>
+
+
+<section id="RSVP">
+
+  <h3>RSVP FORM</h3>
+<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+onload="if(submitted) {window.location='form-success.html';}"></iframe> -->
+
+<!-- <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSe6VGvoGdRYWw8dbSP1ZW30b9VA-dqTReTBYPtCCFe7_4g9Ug/formResponse" target="hidden_iframe" onsubmit="submitted=true;"> -->
+
+<form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSe6VGvoGdRYWw8dbSP1ZW30b9VA-dqTReTBYPtCCFe7_4g9Ug/formResponse">
+
+  <fieldset class="contact-info-group">
+    
+
+    <label><span>Your Name</span>
+    <input type="text" name="entry.206811710"></label>
+
+    <label><span>Your Phone Number</span>
+    <input type="tel" name="entry.159223749"></label>
+
+
+    <!-- <p id="form-quiz">Are you coming?</p> -->
+    <label><span>Yes, I'll be there!</span>
+    <input type="radio" name="entry.737636163" value="Yes, I'll be there!"/></label>
+    <label><span>Sorry, I'm going to miss it.</span>
+    <input type="radio" name="entry.737636163" value="Sorry, I'm going to miss it."/></label>
+
+
+    <!-- DATE INPUT -->
+  <label><span>Arrival Date<span>
+  <input name="entry.1343692322" type="date"></label>
+
+  <!-- TIME INPUT -->
+  <label><span>Arrival Time<span>
+  <input name="entry.856483357" type="time"></label>
+
+  <label><span>Departure Date<span>
+  <input name="entry.1597637995" type="date"></label>
+
+  <!-- TIME INPUT -->
+  <label><span>Departure Time<span>
+  <input name="entry.1114279624" type="time"></label>
+
+  <!-- <label><span></span>
+  <textarea name="message"></textarea></label> -->
+
+  <fieldset class="submit-wrap">
+    <input type="submit" value="Send">
+  </fieldset>
+
+  </fieldset>
+
+
+  
+
+</form>
+
+</section>
+
 
 
 

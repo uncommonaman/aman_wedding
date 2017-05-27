@@ -7,6 +7,7 @@ menu:
 - {name: The Wedding, url: '#thewedding'}
 - {name: Schedule, url: schedule.html}
 - {name: Photos, url: photos.html}
+- {name: RSVP, url: '#RSVP'}
 
 
 
