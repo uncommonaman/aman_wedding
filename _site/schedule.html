@@ -6,9 +6,28 @@
   <style type="text/css">
   body{
     font-family: 'Roboto', sans-serif;
-    background: #FF512F;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #83a4d4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+  }
+  .night{
+   background: #83a4d4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  }
+
+  .day{
+     background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 
   }
     .container {
@@ -451,8 +470,8 @@ a.button {
 
       <li style="display:inline-block; vertical-align:top; width: 16.5
 
-%;" id="sched-nav-0" class="">
-        <div class="circle-nav"></div>
+%;" id="sched-nav-0 " class="pm">
+        <div class="circle-nav pm"></div>
         <h5>Ring Ceremony <br>
          + <br>
           Sangeet</h5>
@@ -465,8 +484,8 @@ a.button {
 
       <li style="display:inline-block; vertical-align:top; width: 16.5
 
-%;" id="sched-nav-0" class="">
-        <div class="circle-nav"></div>
+%;" id="sched-nav-0 " class="am">
+        <div class="circle-nav am"></div>
         <h5>Reception Of Barat <br>
         + <br>
         Anand Karaj</h5>
@@ -479,8 +498,8 @@ a.button {
 
       <li style="display:inline-block; vertical-align:top; width: 16.5
 
-%;" id="sched-nav-0" class="flex-active">
-        <div class="circle-nav"></div>
+%;" id="sched-nav-0 " class="flex-active am">
+        <div class="circle-nav pm"></div>
         <h5>Lunch <br>
         <br>
         </h5>
@@ -493,8 +512,8 @@ a.button {
 
       <li style="display:inline-block; vertical-align:top; width: 16.5
 
-%;" id="sched-nav-0" class="">
-        <div class="circle-nav"></div>
+%;" id="sched-nav-0 " class="pm">
+        <div class="circle-nav pm"></div>
         <h5>Reception <br>
         <br>
         </h5>
@@ -506,8 +525,8 @@ a.button {
       </li>
       <li style="display:inline-block; vertical-align:top; width: 16.5
 
-%;" id="sched-nav-0" class="">
-        <div class="circle-nav"></div>
+%;" id="sched-nav-0 " class="am">
+        <div class="circle-nav am"></div>
         <h5>Muhurtham <br>
         <br>
         </h5>
@@ -519,8 +538,8 @@ a.button {
       </li>
       <li style="display:inline-block; vertical-align:top; width: 16.5
 
-%;" id="sched-nav-0" class="">
-        <div class="circle-nav"></div>
+%;" id="sched-nav-0 " class="pm">
+        <div class="circle-nav pm"></div>
         <h5>Reception <br>
         <br>
         </h5>
@@ -545,6 +564,18 @@ a.button {
     animationSpeed: 150,
     directionNave: false,
     manualControls: '#schedule-navigation li',
+  });
+
+  $('.am').click(function(){
+    $('body').removeClass('night')
+
+    $('body').addClass('day')
+  });
+
+  $('.pm').click(function(){
+    $('body').removeClass('day')
+
+    $('body').addClass('night')
   });
 
 </script>
