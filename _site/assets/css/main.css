@@ -335,8 +335,7 @@ body {
   -webkit-text-size-adjust: 100%; }
   body h3 {
     color: #e1c184;
-    text-align: center;
-    padding: 100px 0 30px; }
+    text-align: center; }
   body svg {
     height: 100%;
     width: 100%; }
@@ -1064,7 +1063,7 @@ selection#mobile {
 
 @media (max-width: 753px) {
   selection#mobile {
-    display: none; }
+    display: inline-block; }
     selection#mobile #cont_cb2b792c316743129afbb522a92cdfbb {
       height: 150px;
       width: 100vw !important;
