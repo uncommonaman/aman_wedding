@@ -408,7 +408,10 @@ header {
       text-align: center;
       font-size: 14.2px; }
     header h1 {
-      padding-top: 0px; } }
+      padding-top: 0px;
+      margin-top: 10px; }
+      header h1 span {
+        padding: 0.1em 0.1em; } }
 footer {
   background-image: url(/assets/img/logo.svg), url(/assets/img/hero-bg.jpg); }
   footer .lockup {
