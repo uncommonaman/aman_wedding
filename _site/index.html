@@ -205,7 +205,7 @@
     box-sizing: border-box;
 }
 
-  .clearfix:before, .clearfix:after {
+  /*.clearfix:before, .clearfix:after {
       content: " ";
       display: table;
   }
@@ -218,8 +218,16 @@
   
   .clearfix:before, .clearfix:after {
       content: " ";
-      display: table;
+      display: table;*/
   }
+
+  .clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
 
 
 
@@ -293,7 +301,7 @@
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
-    float: left;
+    /*float: left;*/
 }
 
 .small-4 {
@@ -425,111 +433,28 @@
     border-bottom-width: 0px;
     border-left-width: 0px;
   }*/
-/*nav.tab-bar {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    border-bottom: 1px solid #595959;
-    -webkit-transition: -webkit-transform 500ms ease;
-    -moz-transition: -moz-transform 500ms ease;
-    -o-transition: -o-transform 500ms ease;
-    -ms-transition: -ms-transform 500ms ease;
-    transition: transform 500ms ease;
-}
-  nav.tab-bar section.left-small {
-    padding: .4rem .45rem;
-    border: none;
-    box-shadow: none;
-}
-
-nav.tab-bar a.menu-icon {
-    width: 2rem;
-    height: 2rem;
-    z-index: 1;
-    border-radius: 50%;
-}
-
-.tab-bar .menu-icon {
-    text-indent: 2.1875rem;
-    width: 2.8125rem;
-    height: 2.8125rem;
-    display: block;
-    padding: 0;
-    color: #FFFFFF;
-    position: relative;
-    transform: translate3d(0, 0, 0);
-}
-
-nav.tab-bar section.tab-bar-section {
-    text-align: center;
-    width: 100%;
-    left: 0;
-    right: 0;
-}
-
-.tab-bar-section {
-    padding: 0 0.625rem;
-    position: absolute;
-    text-align: center;
-    height: 2.8125rem;
-    top: 0;
-}
-
-h1.nav-title {
-    margin: 0;
-    text-transform: none;
-    font-family: "Flood", Times, serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: #000;
-    text-align: center;
-
-}
-
-.overflow-safety {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-    white-space: nowrap;
-}*/
-
-
-
 
   </style>
-
-
-
 
 <!-- </head> -->
 
 
 <section id="mobile-cal">
 
-<!-- <nav class="tab-bar" data-topbar="" style=""> -->
-    <section class="left-small">
-      <a class="left-off-canvas-toggle menu-icon" aria-expanded="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span> </a>
-    </section>
-    <section class="middle tab-bar-section">
-      <!-- <h1 class="nav-title menu-icon-text" style="display: none;">Menu</h1> -->
+    <section class="middle tab-bar-section">      
       <div id="fittext-header" style="margin:0 auto; width: 100%;">
         <h3 class="nav-title main-section-title overflow-safety even">Schedule</h3>
       </div>
     </section>
-  <!-- </nav> -->
 
 <section class="main-section" >
-<div class="mobile-page" id="schedule-page" style="min-height: 523px; display: block;">
-          <section id="schedule">
-            <div class="row">
-  <p class="page-title">Schedule</p>
-</div>
+  <div class="mobile-page" id="schedule-page" style="min-height: 523px; display: block;">
+    <section id="schedule">
+      <div class="row">
+        <p class="page-title">Schedule</p>
+      </div>
 
-<div class="schedule-page1 row">
+  <div class="schedule-page1 row">
     <div class="contain">
       <div class="small-12 columns centered event-container" style="">
         <h2 class="schedule-title" style="line-height:1em">Ring Ceremony + Sangeet</h2>
@@ -562,8 +487,6 @@ h1.nav-title {
               <div class="small-12 columns no-space">
                 <span class="attire">Whatever is left in your luggage.</span>
               </div>
-
-
           </div>
         </div>
 
@@ -698,8 +621,7 @@ h1.nav-title {
         </div>
       </div>
     </div>
-
-        <div class="contain">
+    <div class="contain">
       <div class="small-12 columns centered event-container" ">
         <h2 class="schedule-title" style="line-height:1em">Muhurtham</h2>
         <p class="schedule-date">
@@ -741,9 +663,8 @@ h1.nav-title {
         </div>
       </div>
     </div>
-
-        <div class="contain">
-      <div class="small-12 columns centered event-container" style="border-bottom: 1px solid #000; margin-bottom: 20px">
+    <div class="contain">
+      <div class="small-12 columns centered event-container" style="border-bottom: 1px solid #000;">
         <h2 class="schedule-title" style="line-height:1em">Reception</h2>
         <p class="schedule-date">
           Thursday
@@ -784,39 +705,14 @@ h1.nav-title {
         </div>
       </div>
     </div>
-  <div class="small-12 columns last-div"></div>
-</div>
-
-
-<script>
-  // analagous to the rg_repair_url ruby function
-  // function repairURL(url) {
-  //   if (!url) return "";
-  //   if (url.substring(0, 3) == "http") return url;
-  //   return "http://"+url;
-  // }
-
-  // $(".event-container").click(function() {
-  //   $eventInfo = $(this).siblings(".event-info");
-  //   if($eventInfo.is(":visible")===true) {
-  //     $eventInfo.toggle();
-  //     return;
-  //   }
-  //   $(".event-info").hide();
-  //   $eventInfo.toggle();
-  // })
-
-  // $(".event-info").click(function() {
-  //   $(this).siblings(".event-container").click();
-  // })
-
-</script>
+      <div class="small-12 columns last-div"></div>
+  </div>
 </section>
-        </div>
-        </section>
-        </section>
+</div>
+</section>
+</section>
 
-
+ <div style="clear: both;"></div>
 <section id="RSVP">
 
   <h3>RSVP FORM</h3>

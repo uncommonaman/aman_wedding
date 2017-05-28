@@ -972,6 +972,12 @@ footer {
   font-size: 72px;
   font-weight: 300; }
 
+#RSVP {
+  background-color: oldlace;
+  clear: both; }
+  #RSVP h3 {
+    margin-top: 0; }
+
 form {
   max-width: 450px;
   margin: 0 auto 100px;
