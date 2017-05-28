@@ -392,7 +392,8 @@ header {
     header h1 span {
       display: inline-block;
       border: white solid 10px;
-      padding: 0.2em 0.7em; }
+      padding: 0.2em 0.7em;
+      margin-top: 40px; }
   header .kicker {
     text-align: center;
     color: white;
@@ -411,7 +412,8 @@ header {
       padding-top: 0px;
       margin-top: 10px; }
       header h1 span {
-        padding: 0.1em 0.1em; } }
+        padding: 0.1em 0.1em;
+        margin-top: 0; } }
 footer {
   background-image: url(/assets/img/logo.svg), url(/assets/img/hero-bg.jpg); }
   footer .lockup {
@@ -977,7 +979,8 @@ footer {
 
 #RSVP {
   background-color: oldlace;
-  clear: both; }
+  clear: both;
+  height: 100%; }
   #RSVP h3 {
     margin-top: 0; }
 
