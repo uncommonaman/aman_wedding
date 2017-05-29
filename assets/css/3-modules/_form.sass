@@ -6,6 +6,10 @@
     margin-top: 0
     padding-top: 24px
   
+
+input::placeholder 
+  font-size: 10px
+  color: $accent
   
 form
   #form-quiz
@@ -23,6 +27,8 @@ form
     // -moz-appearance: none
     // appearance: none
     font-size: 16px
+
+
 
     &:focus
       outline: none
@@ -75,6 +81,12 @@ form
       &:nth-child(8)
         padding-left: 10px
 
+      &:nth-child(9)
+        padding-right: 10px
+
+      &:nth-child(10)
+        padding-left: 10px
+
   label
     display: block
     font-size: 14px
@@ -108,6 +120,12 @@ form
           padding: 0
 
         &:nth-child(8)
+          padding: 0
+
+        &:nth-child(9)
+          padding: 0
+
+        &:nth-child(10)
           padding: 0
 
     [type="submit"]

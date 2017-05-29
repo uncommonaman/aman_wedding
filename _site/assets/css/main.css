@@ -991,6 +991,10 @@ footer {
     margin-top: 0;
     padding-top: 24px; }
 
+input::placeholder {
+  font-size: 10px;
+  color: #c99065; }
+
 form {
   max-width: 450px;
   margin: 0 auto 100px;
@@ -1040,6 +1044,10 @@ form {
       padding-right: 10px; }
     form .contact-info-group label:nth-child(8) {
       padding-left: 10px; }
+    form .contact-info-group label:nth-child(9) {
+      padding-right: 10px; }
+    form .contact-info-group label:nth-child(10) {
+      padding-left: 10px; }
   form label {
     display: block;
     font-size: 14px;
@@ -1063,6 +1071,10 @@ form {
     form .contact-info-group label:nth-child(7) {
       padding: 0; }
     form .contact-info-group label:nth-child(8) {
+      padding: 0; }
+    form .contact-info-group label:nth-child(9) {
+      padding: 0; }
+    form .contact-info-group label:nth-child(10) {
       padding: 0; }
   form [type="submit"] {
     width: 100%; } }
