@@ -6,11 +6,17 @@ $(function() {
         $('selector').attr('href','http://example.com');
         $('a[href="schedule.html"]').attr('href','#mobile-cal')
     }
+	    $('#story').click(function(){
+			var selection = $('#titlecontent')
+			selection.toggleClass('pause')
+
+		});
  
 	smoothScroll(300);
 //	workBelt();
 //	workLoad();
 	changeFrame();
+	
 		// workLoad();
 	// clientStuff();
 
@@ -39,6 +45,7 @@ $(function() {
   })
 
 });
+
 
 function changeFrame() {
 //    $('div #cont_3f08dd8c7893d50c153940ce6af1c953').css('height','500px');
