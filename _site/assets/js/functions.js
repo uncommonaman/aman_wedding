@@ -1,4 +1,5 @@
 $(function() {
+	var selection = $('#titlecontent')
 	var submitted=false;
 	var isMobile = window.matchMedia("only screen and (max-width: 760px)");
     if (isMobile.matches) {
@@ -6,11 +7,24 @@ $(function() {
         $('selector').attr('href','http://example.com');
         $('a[href="schedule.html"]').attr('href','#mobile-cal')
     }
-	    $('#story').click(function(){
-			var selection = $('#titlecontent')
+	    
+	 $( window ).scroll(function(e) {
+	 	if ($('#story').visible()) {
+	 		console.log("yo");
+			 selection.addClass('play');
+			 $(window).off('scroll');
+		}
+  
+});
+
+$('#story').click(function(){
+			selection.css('animation-play-state', 'running')
+			selection.removeClass('play')
 			selection.toggleClass('pause')
+			console.log("ok")
 
 		});
+		
  
 	smoothScroll(300);
 //	workBelt();
@@ -25,8 +39,12 @@ $(function() {
 	 $(".biglink").fitText(1.5);
 	 $('textarea').autosize();
 
+	 // $(".rotate").click(function(){
+	 // 	$(this).toggleClass("down");
+	 // })
+
 	 $(".rotate").click(function(){
-	 	$(this).toggleClass("down");
+	 	$(':nth-child(3)', this).toggleClass('down');
 	 })
 
 

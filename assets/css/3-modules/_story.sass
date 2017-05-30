@@ -4,10 +4,12 @@
 //   margin: 0
 .pause
   animation-play-state: paused !important
+.play
+  animation-play-state: running !important
 
 #story
   width: 100%
-  height: 100%
+  height: 50vh
   font-family: "Droid Sans", arial, verdana, sans-serif
   font-weight: 700
   color: #ff6
@@ -186,7 +188,7 @@ p#start
   position: absolute
   // width: 18em
   // height: 50em
-  height: 30em
+  height: 50em
   width: 100vw
   bottom: 0
   // left: 50%
@@ -232,6 +234,8 @@ p#start
     margin: 0.8em 0
     // color: #ff6
     color: black
+    font-weight: bold
+    line-height: 1.6
 
     &.center
       text-align: center
@@ -247,7 +251,7 @@ p#start
   -ms-animation: scroll 100s linear 0s infinite
   -o-animation: scroll 100s linear 0s infinite
   animation: scroll 100s linear 0s infinite
-
+  animation-play-state: paused
 
 @-webkit-keyframes scroll
   0%
