@@ -992,10 +992,6 @@ footer {
     margin-top: 0;
     padding-top: 24px; }
 
-input::placeholder {
-  font-size: 10px;
-  color: #c99065; }
-
 form {
   max-width: 450px;
   margin: 0 auto 100px;
