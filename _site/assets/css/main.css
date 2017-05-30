@@ -1309,7 +1309,8 @@ p#start {
     text-align: justify;
     margin: 0.8em 0;
     color: black;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1.6; }
     #titles p.center {
       text-align: center; }
   #titles a {
