@@ -3,7 +3,17 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
+<head>
+  <title>{{ site.data.portfolio.title }}</title>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  
+</head>
 
 <body>
 {% include header.html %}
@@ -11,6 +21,8 @@ layout: compress
 {% include story.html%}
 {% include work.html %}
 {% include form.html %}
+
+
 
 <script src="assets/js/jquery-2.1.1.min.js"></script>
 <script src="assets/js/jquery.visible.min.js"></script>
