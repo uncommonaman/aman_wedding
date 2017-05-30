@@ -25,8 +25,12 @@ $(function() {
 	 $(".biglink").fitText(1.5);
 	 $('textarea').autosize();
 
+	 // $(".rotate").click(function(){
+	 // 	$(this).toggleClass("down");
+	 // })
+
 	 $(".rotate").click(function(){
-	 	$(this).toggleClass("down");
+	 	$(':nth-child(3)', this).toggleClass('down');
 	 })
 
 
