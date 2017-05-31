@@ -1,86 +1,22 @@
 $(function() {
-	var selection = $('#titlecontent')
-	var submitted=false;
-	var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-    if (isMobile.matches) {
-        //Conditional script here
-        $('selector').attr('href','http://example.com');
-        $('a[href="schedule.html"]').attr('href','#mobile-cal')
-    }
-	    
-	 $( window ).scroll(function(e) {
-	 	if ($('#story').visible()) {
-	 		console.log("yo");
-			 selection.addClass('play');
-			 $(window).off('scroll');
-		}
-  
-});
-
-$('#story').click(function(){
-			selection.css('animation-play-state', 'running')
-			selection.removeClass('play')
-			selection.toggleClass('pause')
-			console.log("ok")
-
-		});
-var clock;
-
-			
-
-				// Grab the current date
-				var currentDate = new Date();
-
-				// Set some date in the future. In this case, it's always Jan 1
-				var futureDate  = new Date(currentDate.getFullYear() , 6, 3);
-
-				// Calculate the difference in seconds between the future and current date
-				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
-				// Instantiate a coutdown FlipClock
-				clock = $('.clock').FlipClock(diff, {
-					clockFace: 'DailyCounter',
-					countdown: true,
-					showSeconds: true
-				});
-			
-		
- 
+	
+	   
+    isMob()
 	smoothScroll(300);
-//	workBelt();
+	playOnScroll();
+	showEventDetails();
+
 //	workLoad();
 	changeFrame();
-	
-		// workLoad();
-	// clientStuff();
-
 	 $("header h1").fitText(1, { minFontSize: '38px', maxFontSize: '72px' });
 	 $(".info p").fitText(1, { minFontSize: '14px', maxFontSize: '20px' });
 	 $(".biglink").fitText(1.5);
 	 $('textarea').autosize();
 
-	 // $(".rotate").click(function(){
-	 // 	$(this).toggleClass("down");
-	 // })
 
 	 $(".rotate").click(function(){
 	 	$(':nth-child(3)', this).toggleClass('down');
 	 })
-
-
-	 $(".event-container").click(function() {
-    	$eventInfo = $(this).siblings(".event-info");
-    if($eventInfo.is(":visible")===true) {
-      $eventInfo.toggle();
-      return;
-    }
-    $(".event-info").hide();
-    $eventInfo.toggle();
-  })
-
-  $(".event-info").click(function() {
-    $(this).siblings(".event-container").click();
-  })
 
 });
 
@@ -100,6 +36,50 @@ function changeFrame() {
     
 }
 
+function playOnScroll(){
+	var selection = $('#titlecontent')
+	$( window ).scroll(function(e) {
+	 	if ($('#story').visible()) {
+			 selection.addClass('play');
+			 $(window).off('scroll');
+		}
+  
+	});
+
+	$('#story').click(function(){
+		selection.css('animation-play-state', 'running')
+		selection.removeClass('play')
+		selection.toggleClass('pause')
+		console.log("ok")
+
+	});
+
+}
+
+function isMob(){
+	var isMobile = window.matchMedia("only screen and (max-width: 760px)"); 
+	if (isMobile.matches) {
+        $('a[href="schedule.html"]').attr('href','#mobile-cal')
+    }
+}
+
+function showEventDetails(){
+	$(".event-container").click(function() {
+    	$eventInfo = $(this).siblings(".event-info");
+    	if($eventInfo.is(":visible")===true) {
+      		$eventInfo.toggle();
+      		return;
+    	}
+    	$(".event-info").hide();
+    	$eventInfo.toggle();
+  	})
+
+  	$(".event-info").click(function() {
+    $(this).siblings(".event-container").click();
+  })
+
+}
+
 // smoothScroll function is applied from the document ready function
 function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
@@ -114,25 +94,6 @@ function smoothScroll (duration) {
 	    }
 	});
 }
-
-
-function workBelt() {
-
-  $('.thumb-unit').click(function() {
-    $('.work-belt').css('left','-100%');
-    $('.work-container').show();
-
-    
-  });
-
-  $('.work-return').click(function() {
-    $('.work-belt').css('left','0%');
-    $('.work-container').hide(800);
-    
-  });
-
-}
-
 
 function  workLoad() {
 
@@ -153,51 +114,7 @@ function  workLoad() {
 
 
 
-function clientStuff() {
 
-  $('.client-logo, .client-button').click(function() {
-    var $this = $(this),
-        position = $this.parent().children().index($this);
-
-    $('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
-    $('.client-logo').removeClass('active-client').eq(position).addClass('active-client');
-    $('.client-button').removeClass('active-client').eq(position).addClass('active-client');
-  });
-
-
-  $('.client-control-next, .client-control-prev').click(function() {
-
-    var $this = $(this),
-        curActiveClient = $('.clients-belt').find('.active-client'),
-        position = $('.clients-belt').children().index(curActiveClient),
-        clientNum = $('.client-unit').length;
-
-      if($this.hasClass('client-control-next')) {
-
-        if(position < clientNum -1){
-          $('.active-client').removeClass('active-client').next().addClass('active-client');
-        } else {
-          $('.client-unit').removeClass('active-client').first().addClass('active-client');
-          $('.client-logo').removeClass('active-client').first().addClass('active-client');
-          $('.client-button').removeClass('active-client').first().addClass('active-client');
-        }
-
-      } else {
-
-        if (position === 0) {
-          $('.client-unit').removeClass('active-client').last().addClass('active-client');
-          $('.client-logo').removeClass('active-client').last().addClass('active-client');
-          $('.client-button').removeClass('active-client').last().addClass('active-client');
-        } else {
-          $('.active-client').removeClass('active-client').prev().addClass('active-client');
-        }
-
-      }
-
-
-  });
-
-}
 
 
 (function( $ ){
