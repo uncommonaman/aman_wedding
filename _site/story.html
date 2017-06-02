@@ -11,9 +11,6 @@
 <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
 
 
-
-
-
 <style type="text/css">
 
 body{
@@ -21,21 +18,38 @@ body{
 }
 
 
-.img-box{
-	position: relative;
-	height: 600px;
+.hero-nav{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  -webkit-box-align: center;
+   -ms-flex-align: center;
+    align-items: center;
+  height: 400px;
+  min-height: 105px;
+	/*height: 600px;*/
 	background-image: url('assets/img/huge/g6.jpg');
 	/*background-position: top center;*/
 	background-attachment: fixed;	
 	/*background-size: auto 600px;*/
 	background-size: cover;
 	background-position: 60% 0px,97% 50%;
-	background-repeat: 	no-repeat;	
+	background-repeat: 	no-repeat;
+	overflow: hidden;
 
 	
 }
 
-h1{
+
+/*h1{
 	font-size: 72px;
 	font-weight: 700;
 	color: white;
@@ -45,7 +59,7 @@ h1{
 	margin-bottom: 20px;
 	font-family: 'Open Sans';
 
-}
+}*/
 		
 /*span{
 	display: inline-block;
@@ -54,14 +68,14 @@ h1{
 	margin-top: 40px;
 }*/
 		
-.logo{
+/*.logo{
 	height: 100px;
 	width: 100%;
 	position: absolute;	
 	top: 50%;
 	margin-top: -72px;
 
-
+*/
 }
 
 
@@ -109,6 +123,19 @@ h1{
     line-height: 64px
 }
 
+.hero-nav:before {
+    content: "";
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: background 400ms;
+    transition: background 400ms;
+}
+
+
 q {
     font-family: 'Gotham SSm A', 'Gotham SSm B', 'Proxima Nova', Futura, Helvetica, sans-serif;
     font-weight: 400;
@@ -129,6 +156,33 @@ q {
     
 }
 
+.hero-nav .hero-nav__inner {
+     z-index: 1; 
+}
+
+.hero-nav h1 {
+    color: #efefef;
+    font-size: 5vw;
+    z-index: 1;
+}
+
+.hero-nav a {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+}
+
+.hero-nav.fixme:before {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+hero-nav__button a{
+	color: #efefef;
+    font-size: 5vw;
+    z-index: 1;
+}
+
+
 
 
 </style>
@@ -140,10 +194,18 @@ q {
 
 <body>
 
- <header class="img-box">
-      <div class="back-bird"></div>
-      <h1 class="logo">Our story</h1>
-      <div class="fore-img"></div>
+ <header class="hero-nav">
+ 		<a href="index.html" class="btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAaVBMVEUAAADv7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+84C6aAAAAAInRSTlMAAQMEERMVFh4fJSZNTk9QVFVWV2Jja2yCpqiq5Ojt8fn9fPBfRgAAAJNJREFUSMft1csOgjAUhOGp9wtWUbyBCs77PyQ7wtnQTkKQqLNsvj/ppinQvW02g7KErFaal4qEJMlqrfnoovGRt2p58uWCfkeziei96E+f9v67/LFvvx/Wp317L/q56LEx/r0MP8ncFGW4cMXPFvm/GHOxUItH+Adyd1NMoRVnQCqugFRE+qa4AFIheMDdngd7UgNiTlHUxGfsoAAAAABJRU5ErkJggg=="
+        	</img></a>
+      <div class="hero-nav__inner">
+       <h1>OUR STORY</h1>
+       
+        	
+       
+
+    </div>
+      
+    
     </header>
     <section class="content">
       <article lang="en-US">
@@ -155,7 +217,7 @@ q {
           <div class="row story-row">
             <q style="text-align: center;">Aman and Vigna<br />are best friends who decided to get married to each other.</q>
           </div>
-          <!-- <div style="clear: both"></div> -->
+          <div style="clear: both"></div>
           <div class="row story-row">
           		<p><span class="first-char">T</span>heir story is not one of spice and glamour. They have never been able to give a poetic answer to friends who have asked them "What is your story?" and "When did it all start?". Why, even they have wondered how it all happened.</p>
           </div>
