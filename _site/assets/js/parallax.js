@@ -5,7 +5,14 @@
 // 		'transform' : 'translate(0px ,'+wScroll/2 +'%)'
 // 	}) 
 // })
+var bg = $(".hero-nav");
 
+function resizeBackground() {
+    bg.height($(window).height());
+}
+
+$(window).resize(resizeBackground);
+resizeBackground();
 
 var heroShinker = function() {
     var hero = $('.hero-nav'),
