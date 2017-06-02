@@ -4,7 +4,8 @@
 
 <!-- Magnific Popup core CSS file -->
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<!-- <meta name="viewport" content="width=device-width, user-scalable=no" /> -->
 <!-- <link rel="stylesheet" href="assets/css/main.css"/> -->
 <!-- <link rel="stylesheet" href="css/style.css"> -->
 
@@ -22,6 +23,7 @@ body, html {
 }
 
 .hero-nav {
+  -webkit-backface-visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;
@@ -36,7 +38,7 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 400px;
+  height: 60vh;
   min-height: 105px;
   background-image: url(assets/img/huge/g6.jpg);
   background-size: cover;
@@ -44,7 +46,6 @@ body, html {
    background-repeat: no-repeat;
   background-position-y: -40px;
   background-position-x: center;
-
   overflow: hidden;
 }
 .hero-nav .hero-nav__inner {
@@ -207,7 +208,7 @@ hero-nav__button a{
           <div class="row story-row">
             <q style="text-align: center;">Aman and Vigna<br />are best friends who decided to get married to each other.</q>
           </div>
-          <div style="clear: both"></div>
+          <!-- <div style="clear: both"></div> -->
           <div class="row story-row">
           		<p><span class="first-char">T</span>heir story is not one of spice and glamour. They have never been able to give a poetic answer to friends who have asked them "What is your story?" and "When did it all start?". Why, even they have wondered how it all happened.</p>
           </div>
