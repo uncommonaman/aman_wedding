@@ -18,7 +18,7 @@ body{
 }
 
 
-.hero-nav{
+/*.hero-nav{
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -34,17 +34,17 @@ body{
    -ms-flex-align: center;
     align-items: center;
   height: 600vh;
-  min-height: 105px;
+  min-height: 105px;*/
 	/*height: 600px;*/
-	background-image: url('assets/img/huge/g6.jpg');
+	/*background-image: url('assets/img/huge/g6.jpg');*/
 	/*background-position: top center;*/
-	background-attachment: fixed;	
+	/*background-attachment: fixed;	*/
 	/*background-size: auto 600px;*/
-	background-size: cover;
+	/*background-size: cover;
 	background-position: 60% 0px,97% 50%;
 	background-repeat: 	no-repeat;
 	overflow: hidden;
-
+*/
 	
 }
 
@@ -99,6 +99,8 @@ body{
 
 
 
+
+
 /*.fore-img{
 	background-color: rgba(0,0,0,0.5);
 	width: 960px;
@@ -123,7 +125,7 @@ body{
     line-height: 64px
 }
 
-.hero-nav:before {
+/*.hero-nav:before {
     content: "";
     background: transparent;
     position: absolute;
@@ -133,7 +135,7 @@ body{
     bottom: 0;
     -webkit-transition: background 400ms;
     transition: background 400ms;
-}
+}*/
 
 
 q {
@@ -156,7 +158,7 @@ q {
     
 }
 
-.hero-nav .hero-nav__inner {
+/*.hero-nav .hero-nav__inner {
      z-index: 1; 
 }
 
@@ -180,8 +182,57 @@ hero-nav__button a{
 	color: #efefef;
     font-size: 5vw;
     z-index: 1;
-}
+}*/
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    min-height: 105px;
+    background-image: url(https://images.unsplash.com/photo-1442606383395-175ee96ed967?q=80&fm=jpg&s=5c8c74be9bc91b47c79a1aaf92264be5);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    .hero-nav__inner{
+        z-index: 1;
+    }
+    h1{
+        color: #efefef;
+        font-size: 5vw;
+    }
+    &:before{
+        content: "";
+        background: rgba(#000, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: background 400ms;
+    }
+    &.fixme{
+        &:before{
+            background: rgba(#000, 0.8);
+        }
+    }
+}
+.page-content{
+    width: 30em;
+    margin: 0 auto;
+    line-height: 1.625;
+}
 
 
 
