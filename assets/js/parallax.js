@@ -8,7 +8,7 @@
 var bg = $(".hero-nav");
 
 function resizeBackground() {
-    bg.height($(window).height());
+    bg.height($(window).height()+60);
 }
 
 $(window).resize(resizeBackground);
