@@ -5,14 +5,14 @@
 // 		'transform' : 'translate(0px ,'+wScroll/2 +'%)'
 // 	}) 
 // })
-var bg = $(".hero-nav");
+// var bg = $(".hero-nav");
 
-function resizeBackground() {
-    bg.height($(window).height()+60);
-}
+// function resizeBackground() {
+//     bg.height($(window).height()+60);
+// }
 
-$(window).resize(resizeBackground);
-resizeBackground();
+// $(window).resize(resizeBackground);
+// resizeBackground();
 
 var heroShinker = function() {
     var hero = $('.hero-nav'),
