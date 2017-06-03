@@ -4,7 +4,7 @@
 
 menu:
 - {name: Countdown, url: '#about-me'}
-- {name: Story, url: '#story'}
+- {name: Story, url: 'story.html'}
 - {name: Events, url: schedule.html}
 - {name: Photos, url: photos.html}
 - {name: RSVP, url: '#RSVP'}
