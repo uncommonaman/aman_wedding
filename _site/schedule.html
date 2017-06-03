@@ -560,34 +560,36 @@ a.button {
     manualControls: '#schedule-navigation li',
   });
 
-  $('.am').click(function(){
-    $('body').removeClass('night')
+  //Not used anymore was used earlier to switch b/w day and night background image
 
-    $('body').addClass('day')
-  });
+  // $('.am').click(function(){
+  //   $('body').removeClass('night')
 
-  $('.pm').click(function(){
-    $('body').removeClass('day')
+  //   $('body').addClass('day')
+  // });
 
-    $('body').addClass('night')
-  });
+  // $('.pm').click(function(){
+  //   $('body').removeClass('day')
+
+  //   $('body').addClass('night')
+  // });
 
 
 
-  $(document).on("keyup",function(){
-    var target = $('div #schedule-navigation li')
-    if(target.hasClass('am flex-active')){
-      $('body').removeClass('night')
-      $('body').addClass('day')
+  // $(document).on("keyup",function(){
+  //   var target = $('div #schedule-navigation li')
+  //   if(target.hasClass('am flex-active')){
+  //     $('body').removeClass('night')
+  //     $('body').addClass('day')
 
-    }
-    if(target.hasClass('pm flex-active')){
-      $('body').removeClass('day')
-      $('body').addClass('night')
+  //   }
+  //   if(target.hasClass('pm flex-active')){
+  //     $('body').removeClass('day')
+  //     $('body').addClass('night')
 
-    }
+  //   }
     
-  });
+  // });
 
 
 </script>
