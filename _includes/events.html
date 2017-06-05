@@ -6,16 +6,16 @@
 		<div class="thumb-wrap">
 			
 				<div class="thumb-container">
-					{% for project in site.data.portfolio.projects %}
+					{% for event in site.data.portfolio.events %}
 						<a href="{{ project.link }}" class="thumb-unit">
 							<time datetime="2014-09-20" class="icon">
-							  <em>{{ project.day }}</em>
-							  <strong>{{ project.month }}</strong>
-							  <span>{{ project.date }}</span>
+							  <em>{{ event.day }}</em>
+							  <strong>{{ event.month }}</strong>
+							  <span>{{ event.date }}</span>
 							</time>
 
 							<div class="thumb-overlay">
-								<p><strong>{{ project.name }}</strong><d style="color: white;font-size: 28px";><sup>{{project.time}}</sup></d></p>
+								<p><strong>{{ event.name }}</strong><d style="color: white;font-size: 28px";><sup>{{event.time}}</sup></d></p>
 								
 							</div>
 						</a>

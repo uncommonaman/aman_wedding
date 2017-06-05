@@ -37,8 +37,8 @@ blurb: <p><strong>Travis specializes in making things</strong> for human people.
 
 
 #............................
-#work Section 
-projects:
+#Events Section 
+events:
 - {name: 'Ring Ceremony and Sangeet', time: '7:00 pm', date: '1', month: 'July',day: 'Saturday', link: 'https://goo.gl/maps/hPXxLGHyqsG2'}
 - {name: 'Reception of Barat & Anand Karaj', time: '10:30 am', date: '2', month: 'July',day: 'Sunday', link: 'https://goo.gl/maps/kHHLFvea97F2'}
 - {name: 'Lunch', time: '1:30 pm', date: '2', month: 'July',day: 'Sunday', link: 'https://goo.gl/maps/HirgmZSQYnM2'}
@@ -48,24 +48,6 @@ projects:
 
 
 
-#............................
-#Clients Section 
-clients:
-- {avatar: 'face-aaroni.jpg', name: Scott Summers, title: Director of Design, Quebec Inc., quote: <p><strong>It is a long established fact that a reader</strong> will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p> , logo: 'logo1.png'}
-
-- {avatar: 'face-atariboy.jpg', name: Scott Summers, title: Director of Design, Quebec Inc., quote: <p><strong>It is a long established fact that a reader</strong> will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p> , logo: 'logo2.png'}
-
-- {avatar: 'face-jackiesaik.jpg', name: Scott Summers, title: Director of Design, Quebec Inc., quote: <p><strong>It is a long established fact that a reader</strong> will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p> , logo: 'logo3.png'}
-
-- {avatar: 'face-teleject.jpg', name: Scott Summers, title: Director of Design, Quebec Inc., quote: <p><strong>It is a long established fact that a reader</strong> will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p> , logo: 'logo4.png'}
 
 
-#............................
-#Contact Section 
-social:
-- {icon: 'twitter', link: 'http:twitter.com/devtipsshow'}
-- {icon: 'dribbble', link: 'http:twitter.com/travisneilson'}
-- {icon: 'behance', link: 'http:twitter.com/travisneilson'}
-- {icon: 'youtube', link: 'http:twitter.com/DevTipsForDesigners'}
-- {icon: 'linkedin', link: 'http:twitter.com/travisneilson'}
-#can be: 'twitter' / 'facebook' / 'github' / 'pinterest' / 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribble' / 'behance' / 'vine' / 'soundcloud'
+
